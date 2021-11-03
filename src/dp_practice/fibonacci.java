@@ -6,11 +6,13 @@ public class fibonacci {
         System.out.println(iterfibo(7));
     }
 
+    // 재귀 피보나치 수열
     public static int recurfibo(int n){
         if(n==1 || n==2) return 1;
         return recurfibo(n-1)+recurfibo(n-2);
     }
 
+    // 반복문 피보나치 수열
     public static int iterfibo(int n){
         int[] numArr=new int[n+1];
         numArr[0]=0;
