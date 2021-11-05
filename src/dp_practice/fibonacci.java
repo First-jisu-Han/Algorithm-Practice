@@ -1,6 +1,6 @@
 package dp_practice;
 
-public class fibonacci {
+public class Fibonacci {
     public static void main(String[] args) {
         System.out.println(recurfibo(7));
         System.out.println(iterfibo(7));
