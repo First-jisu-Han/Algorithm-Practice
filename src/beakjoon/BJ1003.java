@@ -14,20 +14,23 @@ public class BJ1003 {
             i++;
             test_cnt--;
         }
+        for(int j=0;j<num.length;j++){
+        fibo(num[j]);
+        }
     }
 
-    public static Integer[] fibo(int n){
-        if(n==0){
-            cnt1++;
-            return 0;
+    public static void fibo(int n){
+        int[][] f =new int[41][2];   // 최대 40개가능
+        f[0][0]=1;
+        f[0][1]=0;
+        f[1][0]=0;
+        f[1][1]=1;
+        for(int i=2;i<41;i++){
+            f[i][0]=f[i-1][0]+f[i-2][0];
+            f[i][1]=f[i-1][1]+f[i-2][1];
         }
-        else if(n==1){
-            cnt2++;
-            return 1;
-        }
-        else{
-            return fibo(n-1)+fibo(n-2);
-        }
+        System.out.printf("%d ",f[n][0]);
+        System.out.println(f[n][1]);
     }
 
 
