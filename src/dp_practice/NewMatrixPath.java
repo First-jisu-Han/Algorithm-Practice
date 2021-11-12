@@ -1,5 +1,7 @@
 package dp_practice;
     // 앞의 MatrixPath에서 오른쪽 하단 대각선 허용하는 문제 - 오른쪽하단, 하단, 오른쪽 이동 허용됨
+
+// 9주차 - 1번문제 
     public class NewMatrixPath {
         public static void main(String[] args) {
             int mat[][] = { {6,7,12,5},

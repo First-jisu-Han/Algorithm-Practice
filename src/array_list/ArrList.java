@@ -1,4 +1,4 @@
-package ArrList;
+package array_list;
 
 import java.util.NoSuchElementException; // 리스트에 담긴 data 가 없으면 프로그램을 정지시키는 예외 클래스
 

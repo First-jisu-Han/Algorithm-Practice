@@ -1,4 +1,4 @@
-package Sorting;
+package sorting;
 public class Merge {
 
     // 두개를 합병하는 메소드
