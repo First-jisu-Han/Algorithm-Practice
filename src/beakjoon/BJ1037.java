@@ -8,25 +8,16 @@ public class BJ1037 {
         Scanner sc=new Scanner(System.in);
         int number=sc.nextInt();
         sc.nextLine();             // 직동 오류 방지
-        if (number==1) {
-            int onlyNum = sc.nextInt();
-            System.out.print(onlyNum*2);
-        }
-        else{
-            int arr[]=new int[number];
-            String str=sc.nextLine();
-            String[] arrSt;
-            arrSt=str.split(" ");
-            for(int i=0;i<arrSt.length ;i++) {
+         int arr[]=new int[number];
+         String str=sc.nextLine();
+         String[] arrSt;
+         arrSt=str.split(" ");
+         for(int i=0;i<arrSt.length ;i++) {
                 arr[i] = Integer.parseInt(arrSt[i]);
-            }
-            Arrays.sort(arr);
-            int ans =(arr[0]*arr[arr.length-1]);
-            System.out.print(ans);
-        }
+         }
+         Arrays.sort(arr);
+         int ans =(arr[0]*arr[arr.length-1]);
+         System.out.print(ans);
+        }}
 
 
-
-
-    }
-}
