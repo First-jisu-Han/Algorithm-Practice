@@ -18,6 +18,8 @@ public class BJ1037 {
          Arrays.sort(arr);
          int ans =(arr[0]*arr[arr.length-1]);
          System.out.print(ans);
+
+
         }}
 
 
