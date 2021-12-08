@@ -1,3 +1,4 @@
+
 package beakjoon;
 
 import java.util.Arrays;
