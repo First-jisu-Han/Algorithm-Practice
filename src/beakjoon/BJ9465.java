@@ -1,14 +1,13 @@
 package beakjoon;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+
 public class BJ9465 {
     static int[][] dp;
-
     // 파라미터로 주어진 열에서 끝 열까지 점수 합계
     static int sum(int[][] a, int index, int previous) {
         if (index >= a[0].length)
