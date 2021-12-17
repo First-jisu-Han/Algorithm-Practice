@@ -1,8 +1,10 @@
 package java_grammer_basic;
 import java.util.Scanner;
 
-// java 자료구조 + 알고리즘 기술면접구현 + 알고리즘  chapter 1/11
-public class Practice {
+// java 자료구조 + 알고리즘 기술면접구현 + 알고리즘 (책)  chapter 1/11
+
+
+public class PracticeChap1 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println(deMorgan(false ,false));
