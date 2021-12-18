@@ -32,6 +32,8 @@ public class PracticeChap2 {
         for(int j:b){
             System.out.print(j+" ");
         }
+        System.out.println();
+        commentAboutOctalHexadecimal();
 
     }
     static int getMax(int[] arr) {
@@ -52,6 +54,16 @@ public class PracticeChap2 {
             arr[i]=arr[j];
             arr[j]=temp;
         }
+   static void commentAboutOctalHexadecimal(){
+       System.out.println("Ox 시작은 Hexadecimal 16진수");
+       System.out.println("0 시작은 Octal 8진수 ");
+       System.out.println("나머지는 10진수 취급");
+   }
+
+
+
+
+
     }
 
 
