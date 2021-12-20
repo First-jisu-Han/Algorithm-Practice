@@ -17,6 +17,7 @@ public class PracticeChap2_1 {
         } while (x != 0);
         return digits;                             // 몇자리수인지 return
     }
+
     // 기수 변환 프로그램
     static void cardConverting(){
         Scanner sc=new Scanner(System.in);
