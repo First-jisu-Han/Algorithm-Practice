@@ -1,10 +1,9 @@
 package java_grammer_basic;
-
 import javax.lang.model.SourceVersion;
 import java.util.Scanner;
 
 public class PracticeChap3 {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // url 정리 관련 : %20s 앞에서 20글자 공백, %-20s 뒤에서 20글자 공백
         String url="www.google.com";
         System.out.printf("url 관리 우측 정렬 - %20s %n",url);
