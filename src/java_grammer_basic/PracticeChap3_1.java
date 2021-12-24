@@ -28,8 +28,8 @@ public class PracticeChap3_1 {
     // 1과 자신을 제외한 수 중에 약수가 존재하지 않으면 소수라는 발상
     static void getPrimeNumberAnother(int range){
         for (int i = 2; i <= range; i++) {
-            int j;
-            for (j = 2; j<i ; j++) {
+            int j; // for 문안에 넣지 않고 뺀것은 지역변수 이슈가 있어서 인듯함
+            for (j= 2; j<i ; j++) {
                 if (i % j == 0) {
                     break;
                 }
