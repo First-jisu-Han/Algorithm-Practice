@@ -59,7 +59,9 @@ public class PracticeChap3_1 {
         for(int n=0;n<primeNum;n++ ){
             System.out.printf("입력한 곳까지의 %d 번째 소수 : %d %n",n+1,prime[n]);
         }
+
     }
+
 
 
 }
