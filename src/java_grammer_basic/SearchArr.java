@@ -1,6 +1,7 @@
 package java_grammer_basic;
 
 public class SearchArr {
+    // main 메서드
     public static void main(String[] args) {
         int[] arr = {2, 24456, 56, 34, 56, 567, 456, 678, 434, 245, 357, 899, 457, 246};
         System.out.println(getAnswer(arr, 4343));
@@ -8,6 +9,7 @@ public class SearchArr {
         int [] binaryArr= {20,30,64,78,98,100,103,105,465};
         System.out.println(binarySearch(binaryArr,103));
     }
+
 
     // 선형 검색 구현 숏코딩  - O(n) 소요
     static int getAnswer(int[] arr, int target) {
@@ -35,7 +37,6 @@ public class SearchArr {
         return arr.length == i ? -1 : i;
     }
 
-
     // Binary Search 빠르게 구현 - O(log n ) 소요
     static int binarySearch(int [] arr, int target){
         int high=arr.length-1;
@@ -52,7 +53,4 @@ public class SearchArr {
         }
         return -1 ;
     }
-
-    static void
-
 }
