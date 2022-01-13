@@ -1,4 +1,4 @@
-package java_grammer_basic;
+package samsung;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

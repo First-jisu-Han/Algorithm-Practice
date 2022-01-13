@@ -1,4 +1,4 @@
-package java_grammer_basic;
+package samsung;
 public class us
 {
     // Main API :
@@ -22,8 +22,6 @@ public class us
 
     public void play(){
         int r,c;
-        Solution.fire(int r , int c );
-
     }
 
 
