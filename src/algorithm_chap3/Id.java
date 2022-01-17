@@ -36,6 +36,7 @@ public class Id {
             System.out.println(Arrays.binarySearch(id,new Id(1), COMPARATOR)); // 내림차순 정렬했기때문에
         }
     }
+    // 내림차순 정렬 - Comparator 구현
     private static class Comp implements Comparator<Id>{
         @Override
         public int compare(Id d1, Id d2) {
