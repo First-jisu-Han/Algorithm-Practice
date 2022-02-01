@@ -1,4 +1,4 @@
-package 자바의정석.chap6;
+package 자바의정석.chapter6_oop1;
 
 // 이론적 부분
 public class VariableAndMethod {

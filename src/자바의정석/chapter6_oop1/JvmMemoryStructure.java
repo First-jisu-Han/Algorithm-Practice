@@ -1,4 +1,4 @@
-package 자바의정석.chap6;
+package 자바의정석.chapter6_oop1;
 
 public class JvmMemoryStructure {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package 자바의정석.chap6;
+package 자바의정석.chapter6_oop1;
 
 // 클래스와 객체 부분 3회독 부분
 // 객체 배열
