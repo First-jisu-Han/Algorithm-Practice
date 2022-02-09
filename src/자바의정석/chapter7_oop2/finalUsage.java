@@ -8,12 +8,12 @@ public class finalUsage {
 }
 
 // final- 단하나의 값, 선언과 동시에 초기화 되어야한다.
-class human {
+class man {
 
     private final int age;
     private final String sex;
 
-    public human(int age, String sex) {
+    public man(int age, String sex) {
         this.age = age;
         this.sex = sex;
     }
@@ -25,6 +25,7 @@ class ItemStore{
 
     private ItemStore(){
     }
+
     public static ItemStore getInstance(){
         ItemStore itemstore=new ItemStore();
         return itemstore;
