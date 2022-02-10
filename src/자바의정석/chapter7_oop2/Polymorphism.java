@@ -1,6 +1,9 @@
 package 자바의정석.chapter7_oop2;
 
 
+import java.util.List;
+import java.util.Map;
+
 // 다형성 스터디
 public class Polymorphism {
     public static void main(String[] args) {
@@ -21,6 +24,12 @@ public class Polymorphism {
         System.out.println(c1.x);   // 200
         p1.method(); // c.x=200
         c1.method(); // c.x=200
+
+
+        // 다형성 활용
+        Buyer buyer=new Buyer();
+        System.out.print(buyer.buy(new Tv())); //Product의 특정자손에 의해 Product의 price에 값이 주입이된다. // money:4800
+        System.out.println(buyer.buy(new Computer()));  // 4400
 
     }}
 
@@ -63,4 +72,38 @@ class Child extends Parent{
     void method(){
         System.out.println("c.x="+x);
     }
+}
+
+class Product{
+    int price;
+
+    Product(int price){
+        this.price=price;
+    }
+}
+class Tv extends Product{
+
+    public Tv(){
+        super(200);
+    }
+}
+class Computer extends Product{
+
+    Computer() {
+        super(400);
+    }
+}
+class Audio extends Product{
+
+    Audio() {
+        super(500);
+    }
+}
+
+class Buyer{
+    int money=5000;
+    public int buy(Product p){
+       return money-=p.price;
+    }
+
 }
