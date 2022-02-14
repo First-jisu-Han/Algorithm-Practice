@@ -8,6 +8,8 @@ public class QueueTank{
         System.out.println(rq.enqueue(100));
         System.out.println(rq.enqueue(400));
 
+        System.out.println(rq.search(10));
+
         rq.dump();
         System.out.println("");
         System.out.println(rq.dequeue());
@@ -71,6 +73,22 @@ class RingQueue {
             System.out.printf("%d ", que[i]);
         }
     }
+
+    // 문제: 임의의 데이터를 검색할 수 있는 메서드를 구현하라
+    public String search(int value) {
+        int i = 0;
+        for (i = 0; i < currentSize; i++) {
+            if (que[i] == value) {
+                return (i+1)+"번쨰";
+            }
+        }
+        if (i == currentSize - 1) System.out.println("Could not find value");
+        return null;
+    }
+
+
+
+
 
 
 
