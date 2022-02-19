@@ -3,6 +3,7 @@ package algorithm_chap5;
 import java.util.Scanner;
 
 import static algorithm_chap5.recursive.fibo;
+import static algorithm_chap5.recursive.iterFibonacci;
 
 public class RecursiveAnal {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class RecursiveAnal {
 //        recursive.recur(x);
         System.out.println(fibo(6));
         System.out.println(recursive.iterFibo(6));
+        System.out.println(iterFibonacci(6));
     }
 }
 
@@ -50,5 +52,19 @@ class recursive{
             return dpInt[n];
         }
     }
+    static int iterFibonacci(int n){
+        if(n==0 || n==1) return n;
+        else{
+            int last=1;
+            int temp=0;
+            int nextLast=0;
+            for(int i=2;i<n+1;i++){
+                temp=last+nextLast;
+                nextLast=last;
+                last=temp;
+            }
+            return temp;
+        }
 
+    }
 }
