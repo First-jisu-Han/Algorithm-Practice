@@ -14,21 +14,21 @@ public class Recursion {
 class solution {
     // 유클리드 호제법 사용 안한경우 - 최대공약수 구하기
     public static int getMax1(int x, int y) {
-        while (x%y!=0 && y%x!=0) {
+        while (x % y != 0 && y % x != 0) {
             if (x > y) {
                 x = x % y;
             } else if (y > x) {
                 y = y % x;
             }
         }
-        if(x==y){
+        if (x == y) {
             return x;
         }
-        return x>y ? y:x;
+        return x > y ? y : x;
     }
 
     // 유클리드 호제법
-    public static int getMax2(int x,int y) {
+    public static int getMax2(int x, int y) {
         if (y == 0) {
             return x;
         }
