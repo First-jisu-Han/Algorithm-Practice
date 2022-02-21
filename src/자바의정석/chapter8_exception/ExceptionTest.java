@@ -1,5 +1,7 @@
 package 자바의정석.chapter8_exception;
 
+import java.io.File;
+
 public class ExceptionTest {
     public static void main(String[] args) {
         int number = 90;
@@ -22,7 +24,7 @@ class exceptionMaking {
             try{
                 throw new Exception("고의 발생시킴");
             } catch(Exception e){
-                System.out.print("에러메세지:"+e.getMessage());
+                System.out.println("에러메세지:"+e.getMessage());
                 e.printStackTrace();
             }
             System.out.println("프로그램 정상 종료");
@@ -43,3 +45,48 @@ class MethodException {
         throw new Exception("예외 던진다.");
     }
 }
+
+class ExceptionTestFile{
+    public static void main(String[] args) {
+
+    }
+    static File createFile(String fileName){
+        try{
+            if (fileName == null || fileName.equals("")) {
+                throw new Exception("파일 이름이 유효하지 않음");
+            }
+        } catch (Exception e) {
+            fileName = "제목없음.txt";
+        } finally {
+            File f = new File(fileName);
+            createNewFile(f);
+            return f;
+        }
+    }
+    static void createNewFile(File f){
+        try{
+            f.createNewFile();
+        } catch (Exception e){
+
+        }
+    }
+}
+
+
+// 오류 내려줄때
+class MyException extends Exception {
+    private final int ERR_CODE;
+
+    MyException(String message, int errCode) {
+        super(message);
+        ERR_CODE = errCode;
+    }
+    MyException(String message){ // 메세지만 입력하고, 에러코드를 입력하지 않았을때
+        this(message,200);
+    }
+    public int getErrCode(){
+        return ERR_CODE;
+    }
+}
+
+
