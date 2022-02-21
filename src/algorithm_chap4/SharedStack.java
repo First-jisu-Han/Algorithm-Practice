@@ -1,10 +1,10 @@
 package algorithm_chap4;
 
 public class SharedStack {
-    private int max;      // 하나의 배열의 용량
+    private int max;       // 하나의 배열의 용량
     private int pointerA;  // 스택 1의 포인터
     private int pointerB;  // 스택 2의 포인터
-    private int[] stack ; // 스택 1, 2 를 품는 배열
+    private int[] stack; // 스택 1, 2 를 품는 배열
 
     // 실행할 때 예외：스택이 비어 있음
     public class EmptyIntStackException extends RuntimeException {

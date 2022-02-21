@@ -5,13 +5,11 @@ public class RepairableTest {
         Tank tank=new Tank();
         SCV scv=new SCV();
         scv.repair(tank);
-//        scv.repair(marine); 불가능하게끔
+//      scv.repair(marine); 불가능하게끔
     }
-
 }
 
 interface Repairable{
-
 }
 
 class Unit{
