@@ -67,7 +67,6 @@ class ExceptionTestFile{
         try{
             f.createNewFile();
         } catch (Exception e){
-
         }
     }
 }
