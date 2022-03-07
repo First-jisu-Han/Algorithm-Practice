@@ -30,6 +30,7 @@ public class Practices {
         for(String s:str){
             Integer.parseInt(s);
         }
+
         
         
     }

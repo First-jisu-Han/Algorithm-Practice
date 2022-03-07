@@ -19,14 +19,10 @@ public class BJ1049 {
         }
         Arrays.sort(set);
         Arrays.sort(one);
-
-        System.out.print(getAnswer(set,one,needs));
-    }
-    public static int getAnswer(int[] x, int[] y, int r){
-        if(x[0]==0){
-            return r*y[0];
+        if(set[0]==0){
+            System.out.print(needs*one[0]);
         } else{
-            return x[0]*(r/6)+getMax(x,y,r%6);
+            System.out.print(set[0]*(needs/6)+getMax(set,one,needs%6));
         }
     }
     public static int getMax(int [] x,int [] y,int r){
