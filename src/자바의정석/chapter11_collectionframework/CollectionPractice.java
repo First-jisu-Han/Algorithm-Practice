@@ -8,6 +8,7 @@ public class CollectionPractice {
     public static void main(String[] args) {
 
         ArrayList al= new ArrayList(10);
+
         al.add(new Integer(5));
         al.add(new Integer(4));
         al.add(new Integer(0));
