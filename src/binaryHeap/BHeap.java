@@ -28,7 +28,6 @@ public class BHeap<Key extends Comparable<Key>, Value> {
         for(int i = this.N / 2; i > 0; --i) {
             this.downheap(i);
         }
-
     }
 
     public void downheap(int i) {
@@ -38,7 +37,6 @@ public class BHeap<Key extends Comparable<Key>, Value> {
                 if (k < this.N && this.greater(k, k + 1)) {
                     ++k;
                 }
-
                 if (this.greater(i, k)) {
                     this.swap(i, k);
                     i = k;
@@ -80,7 +78,6 @@ public class BHeap<Key extends Comparable<Key>, Value> {
         for(int i = 1; i <= this.N; ++i) {
             System.out.print("[" + this.a[i].getKey() + " " + this.a[i].getValue() + "]");
         }
-
         System.out.println(" ");
         System.out.println("힙의 크기: " + this.size());
         System.out.println(" ");
