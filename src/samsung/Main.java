@@ -4,28 +4,22 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-class Main
-{
-    private final static int CMD_INIT				= 1;
-    private final static int CMD_BUY				= 2;
-    private final static int CMD_SELL				= 3;
-    private final static int CMD_CANCEL				= 4;
-    private final static int CMD_BEST_PROFIT		= 5;
+class Main {
+    private final static int CMD_INIT = 1;
+    private final static int CMD_BUY = 2;
+    private final static int CMD_SELL = 3;
+    private final static int CMD_CANCEL = 4;
+    private final static int CMD_BEST_PROFIT = 5;
 
-    private final static UserSolution usersolution = new UserSolution();
+    private final static UserSolution usersolution=new UserSolution();
 
     private static boolean run(BufferedReader br) throws Exception
     {
         StringTokenizer st;
-
         int numQuery;
-
         int mNumber, mStock, mQuantity, mPrice;
-
         int userAns, ans;
-
         boolean isCorrect = false;
-
         numQuery = Integer.parseInt(br.readLine());
 
         for (int q = 0; q < numQuery; ++q)
@@ -89,7 +83,6 @@ class Main
         int TC, MARK;
 
         //System.setIn(new java.io.FileInputStream("res/sample_input.txt"));
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 

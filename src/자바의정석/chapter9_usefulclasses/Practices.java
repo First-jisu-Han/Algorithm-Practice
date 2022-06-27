@@ -1,5 +1,6 @@
 package 자바의정석.chapter9_usefulclasses;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -31,8 +32,7 @@ public class Practices {
             Integer.parseInt(s);
         }
 
-        
-        
+
     }
 
 }
